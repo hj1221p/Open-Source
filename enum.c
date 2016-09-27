@@ -1,6 +1,6 @@
 /*
-¼Ö·ç¼Ç / ÇÁ·ÎÁ§Æ® / ¼Ò½ºÆÄÀÏ: Ch03 / Prj13 / enum.c
-Å°¿öµå enumÀ¸·Î ¸¸µå´Â ¿­°ÅÇü Á¤¼ö »ó¼ö ¸ñ·Ï
+ì†”ë£¨ì…˜ / í”„ë¡œì íŠ¸ / ì†ŒìŠ¤íŒŒì¼: Ch03 / Prj13 / enum.c
+í‚¤ì›Œë“œ enumìœ¼ë¡œ ë§Œë“œëŠ” ì—´ê±°í˜• ì •ìˆ˜ ìƒìˆ˜ ëª©ë¡
 V 1.0 2016
 */
 
@@ -8,14 +8,14 @@ V 1.0 2016
 
 int main(void)
 {
-	//Å°¿öµå enumÀ¸·Î ¿­°ÅÇü Á¤¼ö »ó¼ö ¸ñ·Ï ¸¸µé±â
+	//í‚¤ì›Œë“œ enumìœ¼ë¡œ ì—´ê±°í˜• ì •ìˆ˜ ìƒìˆ˜ ëª©ë¡ ë§Œë“¤ê¸°
 	enum DAY {SUN, MON, TUE, WED, THU, FRI, SAT };
-	printf("ÀÏ¿äÀÏ »ó¼ö: %d\n", SUN);  //0
-	printf("¼ö¿äÀÏ »ó¼ö: %d\n", WED);  //3
+	printf("ì¼ìš”ì¼ ìƒìˆ˜: %d\n", SUN);  //0
+	printf("ìˆ˜ìš”ì¼ ìƒìˆ˜: %d\n", WED);  //3
 
-	//»ó¼ö ¸ñ·Ï¿¡¼­ Æ¯Á¤ÇÑ Á¤¼ö ÁöÁ¤ °¡´É
+	//ìƒìˆ˜ ëª©ë¡ì—ì„œ íŠ¹ì •í•œ ì •ìˆ˜ ì§€ì • ê°€ëŠ¥
 	enum SHAPE {POINT, LINE, TRI = 3, RECT, OCTA = 8, CIRCLE};
-	printf("%LINE: %d, RECT: %d, CIRCLE: %d\n", LINE, RECT, CIRCLE);
+	printf("LINE: %d, RECT: %d, CIRCLE: %d\n", LINE, RECT, CIRCLE);
 
 	enum bool{FALSE, TRUE};
 	enum pl {c = 1972, cpp = 1983, java = 1995, csharp = 2000};
